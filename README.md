@@ -2,8 +2,6 @@
 Módulo centralizado de gestión logística y redistribución de stock para HABiTAR (DILCAR S.A.). TPI de Organización Empresarial, UTN - TUP a Distancia.
 # Módulo Centralizado de Gestión Logística y Redistribución de Stock – Habitar / DILCAR S.A.
 
-Trabajo Práctico Integrador – Organización Empresarial
-Tecnicatura Universitaria en Programación a Distancia – Universidad Tecnológica Nacional (UTN)
 
 | | |
 |---|---|
@@ -125,7 +123,7 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 
 **Ramas**
 - `main`: versión estable y entregable. No se trabaja directamente sobre ella.
-- Rama secundaria: `carga de documentos y diagrama` se utilizó para la carga de documentos y correción del archivo README.
+- Rama secundaria: `carga-de-documentos-y-diagrama` se utilizó para la carga de documentos y correción del archivo README.
 
 **Mensajes de commit**
 - `main: initial commit` 
@@ -166,8 +164,6 @@ El caso de estudio, la problemática logística, la propuesta de mejora y el org
 | Ayudame a modelar en BPMN el proceso de redistribución de mercadería con Pools, Lanes y compuertas de excepción | Indiqué el flujo del algoritmo (alerta, recomendación, autorización, tránsito, recepción) para que el modelo reflejara mi diseño. | Un borrador de diagrama BPMN que revisé y ajusté. |
 
 ### Correcciones humanas sobre los resultados de la IA
-
-Ejemplos de puntos a revisar y, si aplican, a declarar (confirmá cuáles hiciste realmente):
 
 - La IA tendía a automatizar el traslado, corregí que la alerta **no mueve mercadería** y que la decisión final la toma personal autorizado.
 - Hice configurable el plazo de 30 días por categoría de producto.
