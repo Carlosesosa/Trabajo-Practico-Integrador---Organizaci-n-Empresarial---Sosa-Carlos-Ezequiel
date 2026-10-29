@@ -7,8 +7,8 @@ Tecnicatura Universitaria en Programación a Distancia – Universidad Tecnológ
 
 | | |
 |---|---|
-| **Tablero ágil** | [GitHub Projects](https://github.com/users/Carlosesosa/projects/1/views/1) |
-| **Repositorio** | [GitHub](https://github.com/Carlosesosa/Trabajo-Practico-Integrador---Organizaci-n-Empresarial---Sosa-Carlos-Ezequiel.git) |
+| **Tablero ágil** | [GitHub Projects/Tablero Ágil](https://github.com/users/Carlosesosa/projects/1/views/1) |
+| **Repositorio** | [Repositorio - Trabajo Practico Integrador Organización Empresarial/Sosa Carlos Ezequiel](https://github.com/Carlosesosa/Trabajo-Practico-Integrador---Organizaci-n-Empresarial---Sosa-Carlos-Ezequiel.git) |
 | **Docente titular** | Prof. Gabriela Martínez |
 | **Docentes adjuntos** | Prof. Carolina Bruno, Prof. Mario Raúl López, Prof. Andrea Ramos |
 | **Fecha de entrega** | 1 de noviembre de 2026 |
@@ -47,7 +47,7 @@ El proyecto propone un **módulo centralizado de gestión logística y redistrib
 
 Diagrama del proceso de redistribución de mercadería entre sucursales, con Pools y Lanes:
 
-![Diagrama BPMN](.....)
+![Diagrama BPMN](https://github.com/Carlosesosa/Trabajo-Practico-Integrador---Organizaci-n-Empresarial---Sosa-Carlos-Ezequiel/blob/6b9691f9da92669a7856f18ccf9f7252588677a0/diagrama%20BPMN.png)
 
 **Flujo estándar:** el sistema analiza ventas y stock → detecta un producto que supera el plazo sin ventas → genera la alerta → busca una sucursal candidata → recomienda el traslado → Logística revisa y autoriza → se registra el envío y la mercadería queda en tránsito → la sucursal destino confirma la recepción → se actualiza el stock de ambas sucursales.
 
@@ -96,13 +96,13 @@ Formato: **Como** [usuario], **quiero** [funcionalidad], **para** [beneficio].
 
 ## Tablero ágil
 
-Las historias se gestionan en el tablero: [.....]
+Las historias se gestionan en el tablero: [GitHub Projects/Tablero Ágil](https://github.com/users/Carlosesosa/projects/1/views/1)
 
 | Historia | Estado actual |
 |---|---|
-| HU-01 – Alertas de baja rotación | ..... |
-| HU-02 – Revisión y autorización de traslados | ..... |
-| HU-03 – Confirmación de recepción | ..... |
+| HU-01 – Alertas de baja rotación | Por Hacer |
+| HU-02 – Revisión y autorización de traslados | En Progreso |
+| HU-03 – Confirmación de recepción | Listo |
 
 Columnas del tablero: **Por Hacer → En Progreso → Listo**. Cada tarjeta se vincula a su Issue del repositorio y cada Pull Request referencia el Issue correspondiente (por ejemplo, `Closes #1`).
 
@@ -125,19 +125,15 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 
 **Ramas**
 - `main`: versión estable y entregable. No se trabaja directamente sobre ella.
-- Ramas secundarias por tarea, con prefijo según el tipo: `docs/`, `feature/`, `fix/`. Ejemplos: `docs/bpmn-proceso`, `docs/historias-usuario`, `docs/indicadores-control`.
+- Rama secundaria: `carga de documentos y diagrama` se utilizó para la carga de documentos y correción del archivo README.
 
-**Mensajes de commit** (formato `tipo: descripción en imperativo`)
-- `docs: agrega diagrama BPMN del proceso de redistribución`
-- `docs: redacta historias de usuario HU-01 a HU-03 con criterios de aceptación`
-- `docs: incorpora tabla de indicadores de control`
-- `fix: corrige descripción del estado Con incidencia en el diccionario`
-
-**Pull Requests**
-1. Crear la rama desde `main`, hacer commits pequeños y descriptivos.
-2. Abrir un Pull Request hacia `main` indicando qué cambia y a qué historia se vincula.
-3. Un par revisa y deja comentarios; se resuelven los comentarios antes de aprobar.
-4. Se hace el merge y se elimina la rama.
+**Mensajes de commit**
+- `main: initial commit` 
+- `main: Redacción archivo README`
+- `main: Actualización de links en README.md para proyecto y repositorio`
+- `carga-de-documentos-y-diagrama: carga de BPMN.png`
+- `carga-de-documentos-y-diagrama: actualizacion de estructura de archivo README`
+.........
 
 ## Estructura del repositorio
 
@@ -150,7 +146,8 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 
 ## Declaración de Uso de IA
 
-> **Nota para completar:** esta sección debe reflejar lo que realmente hiciste. Reemplazá los textos entre corchetes con tus prompts reales y las correcciones concretas que hiciste; la consigna evalúa justamente esa justificación crítica.
+Para la elaboración de esta entrega se utilizó Claude (Anthropic) y ChatGPT, como apoyo en la organización y estructuración del documento, la revisión de la redacción y el formato de presentación. También se empleó como herramienta de consulta para trabajar sobre el diccionario de datos, el diagrama BPMN, diagrama de Gantt, etc.
+El caso de estudio, la problemática logística, la propuesta de mejora y el organigrama se basan en las entregas previas y en mi experiencia laboral en la empresa. Como estudiante, asumo la responsabilidad de revisar y verificar el contenido final, procurando mantener su coherencia con los trabajos anteriores y con los contenidos de la asignatura. La responsabilidad por la versión presentada corresponde al estudiante.
 
 ### Herramientas utilizadas
 
@@ -162,17 +159,19 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 
 ### Prompts utilizados y su justificación
 
-| Prompt (resumen) | Por qué lo formulé así | Qué resultado obtuve |
+| Prompt | Por qué lo formulé así | Qué resultado obtuve |
 |---|---|---|
-| ..... | ..... | ..... |
-| ..... | .....|..... |
-| .....| ..... | ..... |
+| Armá un Gantt de 16 semanas con 5 fases, precedencias y roles | Definí yo las fases, el plazo y los roles, y usé la IA solo para organizar la tabla. |  Un cronograma con tareas interdependientes que revisé para chequear que las precedencias fueran coherentes. |
+| Ayudame a estructurar el análisis de Habitar como sistema abierto (entradas, procesos, salidas, ambiente) según la TGS | Le pasé la consigna y el contexto real de la empresa para que la respuesta siguiera la teoría vista en la materia y no fuera genérica. | Un esquema ordenado de la organización como sistema abierto, que luego completé con datos de la empresa. |
+| Ayudame a modelar en BPMN el proceso de redistribución de mercadería con Pools, Lanes y compuertas de excepción | Indiqué el flujo del algoritmo (alerta, recomendación, autorización, tránsito, recepción) para que el modelo reflejara mi diseño. | Un borrador de diagrama BPMN que revisé y ajusté. |
 
 ### Correcciones humanas sobre los resultados de la IA
 
 Ejemplos de puntos a revisar y, si aplican, a declarar (confirmá cuáles hiciste realmente):
 
-- La problemática logística surge de mi experiencia laboral en Habitar; la IA no la identificó.
+- La IA tendía a automatizar el traslado, corregí que la alerta **no mueve mercadería** y que la decisión final la toma personal autorizado.
+- Hice configurable el plazo de 30 días por categoría de producto.
+- La problemática logística surge de mi experiencia laboral en Habitar, la IA no la identificó.
 - La referencia comparativa con Cetrogar proviene de información que obtuve a través de un familiar, no de la IA.
 
 
