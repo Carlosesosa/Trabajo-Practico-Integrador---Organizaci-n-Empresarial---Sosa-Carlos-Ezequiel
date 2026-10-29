@@ -139,8 +139,8 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 ```
 .
 ├── README.md
-├── entrega-n4/   Documento consolidado
-└── bpmn/        Diagrama del proceso
+├── TP Integrador Organización Empresarial Entrega n4 - Sosa Carlos Ezequiel.docx     Documento consolidado
+└── diagrama BPMN.png    Diagrama del proceso
 ```
 
 ## Declaración de Uso de IA
