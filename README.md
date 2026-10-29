@@ -144,9 +144,8 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 ```
 .
 ├── README.md
-└── docs/
-    ├── entrega-n4/   Documento consolidado
-    └── bpmn/        Diagrama del proceso
+├── entrega-n4/   Documento consolidado
+└── bpmn/        Diagrama del proceso
 ```
 
 ## Declaración de Uso de IA
