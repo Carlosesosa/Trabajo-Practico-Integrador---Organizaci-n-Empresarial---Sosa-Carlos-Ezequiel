@@ -96,13 +96,14 @@ Formato: **Como** [usuario], **quiero** [funcionalidad], **para** [beneficio].
 
 Las historias se gestionan en el tablero: [GitHub Projects/Tablero Ágil](https://github.com/users/Carlosesosa/projects/1/views/1)
 
-| Historia | Estado actual |
-|---|---|
-| HU-01 – Alertas de baja rotación | Por Hacer |
-| HU-02 – Revisión y autorización de traslados | En Progreso |
-| HU-03 – Confirmación de recepción | Listo |
+| Historia | Issue | Estado actual |
+|---|---|---|
+| HU-01 – Alertas de baja rotación | #5 | Por Hacer |
+| HU-02 – Revisión y autorización de traslados | #6 | En Progreso |
+| HU-03 – Confirmación de recepción | #7 | Listo |
+| Documentación y diagrama BPMN | #8 | En Progreso |
 
-Columnas del tablero: **Por Hacer → En Progreso → Listo**. Cada tarjeta se vincula a su Issue del repositorio y cada Pull Request referencia el Issue correspondiente (por ejemplo, `Closes #1`).
+> El estado de cada tarjeta se usa para evidenciar el seguimiento del tablero y refleja el avance de la documentación del proyecto, no del código.
 
 ## Indicadores de control y estándares de desempeño
 
@@ -123,7 +124,7 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 
 **Ramas**
 - `main`: versión estable y entregable. No se trabaja directamente sobre ella.
-- Rama secundaria: `carga-de-documentos-y-diagrama` se utilizó para la carga de documentos y correción del archivo README.
+- Rama secundaria: `carga-de-documentos-y-diagrama` se utilizó para la carga de documentos y corrección del archivo README.
 
 **Mensajes de commit**
 - `main: initial commit` 
@@ -131,7 +132,7 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 - `main: Actualización de links en README.md para proyecto y repositorio`
 - `carga-de-documentos-y-diagrama: carga de BPMN.png`
 - `carga-de-documentos-y-diagrama: actualizacion de estructura de archivo README`
-.........
+- `corrección en README de links y declaración de IA`
 
 ## Estructura del repositorio
 
@@ -162,6 +163,7 @@ El caso de estudio, la problemática logística, la propuesta de mejora y el org
 | Armá un Gantt de 16 semanas con 5 fases, precedencias y roles | Definí yo las fases, el plazo y los roles, y usé la IA solo para organizar la tabla. |  Un cronograma con tareas interdependientes que revisé para chequear que las precedencias fueran coherentes. |
 | Ayudame a estructurar el análisis de Habitar como sistema abierto (entradas, procesos, salidas, ambiente) según la TGS | Le pasé la consigna y el contexto real de la empresa para que la respuesta siguiera la teoría vista en la materia y no fuera genérica. | Un esquema ordenado de la organización como sistema abierto, que luego completé con datos de la empresa. |
 | Ayudame a modelar en BPMN el proceso de redistribución de mercadería con Pools, Lanes y compuertas de excepción | Indiqué el flujo del algoritmo (alerta, recomendación, autorización, tránsito, recepción) para que el modelo reflejara mi diseño. | Un borrador de diagrama BPMN que revisé y ajusté. |
+| Armá indicadores de control para auditar el sistema | Pedí que los primeros indicadores derivaran de las metas cuantitativas de la Entrega N°2, para mantener coherencia. | Una tabla de indicadores con fórmula, estándar y fuente, donde dejé "a definir tras el piloto" en los que no tenían un dato real. |
 
 ### Correcciones humanas sobre los resultados de la IA
 
@@ -169,7 +171,6 @@ El caso de estudio, la problemática logística, la propuesta de mejora y el org
 - Hice configurable el plazo de 30 días por categoría de producto.
 - La problemática logística surge de mi experiencia laboral en Habitar, la IA no la identificó.
 - La referencia comparativa con Cetrogar proviene de información que obtuve a través de un familiar, no de la IA.
-
 
 ### Responsabilidad
 
