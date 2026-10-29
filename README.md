@@ -7,8 +7,8 @@ Tecnicatura Universitaria en Programación a Distancia – Universidad Tecnológ
 
 | | |
 |---|---|
-| **Tablero ágil** | ..... |
-| **Repositorio** | ..... |
+| **Tablero ágil** | [GitHub Projects](https://github.com/users/Carlosesosa/projects/1/views/1) |
+| **Repositorio** | [GitHub](https://github.com/Carlosesosa/Trabajo-Practico-Integrador---Organizaci-n-Empresarial---Sosa-Carlos-Ezequiel.git) |
 | **Docente titular** | Prof. Gabriela Martínez |
 | **Docentes adjuntos** | Prof. Carolina Bruno, Prof. Mario Raúl López, Prof. Andrea Ramos |
 | **Fecha de entrega** | 1 de noviembre de 2026 |
