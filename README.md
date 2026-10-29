@@ -101,7 +101,7 @@ Las historias se gestionan en el tablero: [GitHub Projects/Tablero Ágil](https:
 | HU-01 – Alertas de baja rotación | #5 | Por Hacer |
 | HU-02 – Revisión y autorización de traslados | #6 | En Progreso |
 | HU-03 – Confirmación de recepción | #7 | Listo |
-| Documentación y diagrama BPMN | #8 | En Progreso |
+| Documentación y diagrama BPMN | #8 | Listo |
 
 > El estado de cada tarjeta se usa para evidenciar el seguimiento del tablero y refleja el avance de la documentación del proyecto, no del código.
 
@@ -133,6 +133,15 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 - `carga-de-documentos-y-diagrama: carga de BPMN.png`
 - `carga-de-documentos-y-diagrama: actualizacion de estructura de archivo README`
 - `corrección en README de links y declaración de IA`
+
+## Pull Request y revisión de pares
+
+- **Pull Request:** [#9 – docs: agrega diagrama BPMN, documento consolidado y actualiza README](https://github.com/Carlosesosa/Trabajo-Practico-Integrador---Organizaci-n-Empresarial---Sosa-Carlos-Ezequiel/pull/9)
+- **Rama:** `carga-de-documentos-y-diagrama` → `main`
+- **Revisado por:** Eliasgsosa
+- **Issue vinculado:** #8 (`Closes #8`)
+- **Qué se revisó:** coincidencia del diagrama BPMN con el flujo y las compuertas descritas, links y estructura del README.
+- **Resultado:** aprobado y mergeado.
 
 ## Estructura del repositorio
 
