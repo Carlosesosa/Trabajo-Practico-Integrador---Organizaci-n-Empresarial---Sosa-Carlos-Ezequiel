@@ -1,6 +1,5 @@
 # Trabajo Practico Integrador Organización Empresarial - Sosa Carlos Ezequiel
 Módulo centralizado de gestión logística y redistribución de stock para HABiTAR (DILCAR S.A.). TPI de Organización Empresarial, UTN - TUP a Distancia.
-# Módulo Centralizado de Gestión Logística y Redistribución de Stock – Habitar / DILCAR S.A.
 
 
 | | |
