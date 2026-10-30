@@ -6,7 +6,7 @@ Módulo centralizado de gestión logística y redistribución de stock para HABi
 | | |
 |---|---|
 | **Tablero ágil** | [GitHub Projects/Tablero Ágil](https://github.com/users/Carlosesosa/projects/1/views/1) |
-| **Repositorio** | [Repositorio - Trabajo Practico Integrador Organización Empresarial/Sosa Carlos Ezequiel](https://github.com/Carlosesosa/Trabajo-Practico-Integrador---Organizaci-n-Empresarial---Sosa-Carlos-Ezequiel.git) |
+| **Repositorio** | [Repositorio - Trabajo Practico Integrador Organización Empresarial/Sosa Carlos Ezequiel](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel.git) |
 | **Docente titular** | Prof. Gabriela Martínez |
 | **Docentes adjuntos** | Prof. Carolina Bruno, Prof. Mario Raúl López, Prof. Andrea Ramos |
 | **Fecha de entrega** | 1 de noviembre de 2026 |
@@ -45,7 +45,7 @@ El proyecto propone un **módulo centralizado de gestión logística y redistrib
 
 Diagrama del proceso de redistribución de mercadería entre sucursales, con Pools y Lanes:
 
-![Diagrama BPMN](https://github.com/Carlosesosa/Trabajo-Practico-Integrador---Organizaci-n-Empresarial---Sosa-Carlos-Ezequiel/blob/6b9691f9da92669a7856f18ccf9f7252588677a0/diagrama%20BPMN.png)
+![Diagrama BPMN](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/blob/actualizacion-documento-final/diagrama%20BPMN.png)
 
 **Flujo estándar:** el sistema analiza ventas y stock → detecta un producto que supera el plazo sin ventas → genera la alerta → busca una sucursal candidata → recomienda el traslado → Logística revisa y autoriza → se registra el envío y la mercadería queda en tránsito → la sucursal destino confirma la recepción → se actualiza el stock de ambas sucursales.
 
@@ -136,7 +136,7 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 
 ## Pull Request y revisión de pares
 
-- **Pull Request:** [#9 – docs: agrega diagrama BPMN, documento consolidado y actualiza README](https://github.com/Carlosesosa/Trabajo-Practico-Integrador---Organizaci-n-Empresarial---Sosa-Carlos-Ezequiel/pull/9)
+- **Pull Request:** [#9 – docs: agrega diagrama BPMN, documento consolidado y actualiza README](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/9)
 - **Rama:** `carga-de-documentos-y-diagrama` → `main`
 - **Revisado por:** Eliasgsosa
 - **Issue vinculado:** #8 (`Closes #8`)
@@ -187,7 +187,7 @@ Revisé y verifiqué el contenido final de este repositorio y asumo la responsab
 
 ## Bibliografía
 
-- HABiTAR. (s.f.). *Quiénes somos*. https://habitar.com.ar/quienes-somos
-- HABiTAR. (s.f.). *Sucursales*. https://habitar.com.ar/sucursales
-- HABiTAR. (s.f.). *Cómo comprar online*. https://habitar.com.ar/como-comprar
+- HABiTAR. (s.f.). [*Quiénes somos*](https://habitar.com.ar/quienes-somos)
+- HABiTAR. (s.f.). [*Sucursales*](https://habitar.com.ar/sucursales)
+- HABiTAR. (s.f.). [*Cómo comprar online*](https://habitar.com.ar/como-comprar)
 - Sosa, C. E. (2026). *Trabajo Práctico Integrador, Entregas N°1, N°2 y N°3*. Organización Empresarial, Tecnicatura Universitaria en Programación, UTN.
