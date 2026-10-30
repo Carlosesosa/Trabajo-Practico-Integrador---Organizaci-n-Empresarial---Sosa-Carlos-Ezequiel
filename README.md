@@ -123,7 +123,7 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 ## Flujo de trabajo con Git
 
 **Ramas**
-- `main`: versión estable y entregable. No se trabaja directamente sobre ella.
+- `main:` versión estable y entregable. Los cambios principales se incorporan mediante ramas secundarias y Pull Requests; el commit inicial y la carga del documento final se hicieron directamente sobre ella.
 - `carga-de-documentos-y-diagrama`: se utilizó para la carga de documentos y corrección del archivo README.
 - `actualizacion-documento-final`: rama secundaria utilizada para actualizar los links, la estructura del README y subir la versión final del documento.
 
@@ -140,7 +140,7 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 - **Pull Request:** [#9 – docs: agrega diagrama BPMN, documento consolidado y actualiza README](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/9)
 - **Rama:** `carga-de-documentos-y-diagrama` → `main`
 - **Revisado por:**  [@Eliasgsosa](https://github.com/Eliasgsosa)
-- **Issue vinculado:** [#8](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/issues/8)(`Closes #8`)
+- **Issue vinculado:** [#8](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/issues/8)  (`Closes #8`)
 - **Qué se revisó:** coincidencia del diagrama BPMN con el flujo y las compuertas descritas, links y estructura del README.
 - **Resultado:** aprobado y mergeado.
 
@@ -149,7 +149,7 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 ```
 .
 ├── README.md
-├── TP Integrador Organización Empresarial Entrega n4 - Sosa Carlos Ezequiel.docx     Documento consolidado
+├── TP Integrador Organización Empresarial Entrega n4 - Sosa Carlos Ezequiel.pdf     Documento consolidado
 └── diagrama BPMN.png    Diagrama del proceso
 ```
 
