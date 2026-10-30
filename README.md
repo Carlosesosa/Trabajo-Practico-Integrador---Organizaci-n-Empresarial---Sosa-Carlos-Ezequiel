@@ -145,6 +145,10 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 - `carga-de-documentos-y-diagrama: carga de BPMN.png`
 - `carga-de-documentos-y-diagrama: actualizacion de estructura de archivo README`
 - `actualizacion-documento-final: se borra archivo docx y se deja el archivo en pdf`
+- `actualizacion-documento-final: se borra diagrama BPMN.png`
+- `actualizacion-documento-final: se borra pdf consolidado`
+- `actualizacion-documento-final: Actualización de README para el diagrama BPMN and procesar detalles`
+- `actualizacion-documento-final: Carga de nuevo diagrama BPMN actualizado`
 
 ## Pull Request y revisión de pares
 
@@ -197,6 +201,7 @@ El caso de estudio, la problemática logística, la propuesta de mejora y el org
 - Hice configurable el plazo de 30 días por categoría de producto.
 - La problemática logística surge de mi experiencia laboral en Habitar, la IA no la identificó.
 - La referencia comparativa con Cetrogar proviene de información que obtuve a través de un familiar, no de la IA.
+- El primer borrador del BPMN modelaba el transporte como un actor externo. Lo corregí porque Habitar tiene flota propia de distribución, por eso hoy es una lane interna “Distribución y Transporte”, coherente con el organigrama. También corregí que la recepción debía iniciar recién cuando se entrega la mercadería.
 
 ### Responsabilidad
 
