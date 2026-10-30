@@ -152,12 +152,12 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 
 ## Pull Request y revisión de pares
 
-| PR | Rama | Que Incorpora |
+| PR | Rama | Qué incorpora |
 |---|---|---|
-| #9 | carga-de-documentos-y-diagrama → main | Diagrama BPMN, documento consolidado de la Entrega N°4 y actualización del README. |
-| #10 | actualizacion-documento-final → main | Links del README al nuevo nombre del repositorio, imagen del BPMN apuntando a main, sección de Pull Request, Issue #8 en Listo, ramas, commits y estructura actualizados, y reemplazo del .docx por el PDF. |
-| #11 | main → actualizacion-documento-final | Sincronización de la rama con main para continuar las ediciones pendientes. |
-|#12 | actualizacion-documento-final → main | Versión final: PDF consolidado, diagrama BPMN actualizado, indicadores, declaración de IA y README definitivo. |
+| [#9](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/9) | carga-de-documentos-y-diagrama → main | Diagrama BPMN, documento consolidado de la Entrega N°4 y actualización del README. |
+| [#10](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/10) | actualizacion-documento-final → main | (tu texto actual) |
+| [#11](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/11) | main → actualizacion-documento-final | Sincronización de la rama con main para continuar las ediciones pendientes. |
+| [#12](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/12) | actualizacion-documento-final → main | Versión final: PDF consolidado, diagrama BPMN actualizado, indicadores, declaración de IA y README definitivo. |
 
 - **Revisado por (PR #9):** [@Eliasgsosa](https://github.com/Eliasgsosa)
 - **Issue vinculado:** [#8](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/issues/8)  (`Closes #8`)
