@@ -6,7 +6,7 @@ Módulo centralizado de gestión logística y redistribución de stock para HABi
 | | |
 |---|---|
 | **Tablero ágil** | [GitHub Projects/Tablero Ágil](https://github.com/users/Carlosesosa/projects/1/views/1) |
-| **Repositorio** | [Repositorio - Trabajo Practico Integrador Organización Empresarial/Sosa Carlos Ezequiel](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel.git) |
+| **Repositorio** | [Repositorio - Trabajo Practico Integrador Organización Empresarial/Sosa Carlos Ezequiel](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel) |
 | **Docente titular** | Prof. Gabriela Martínez |
 | **Docentes adjuntos** | Prof. Carolina Bruno, Prof. Mario Raúl López, Prof. Andrea Ramos |
 | **Fecha de entrega** | 1 de noviembre de 2026 |
@@ -123,7 +123,7 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 ## Flujo de trabajo con Git
 
 **Ramas**
-- `main:` versión estable y entregable. Los cambios principales se incorporan mediante ramas secundarias y Pull Requests; el commit inicial y la carga del documento final se hicieron directamente sobre ella.
+- `main`: versión estable y entregable. Los cambios principales se incorporan mediante ramas secundarias y Pull Requests; el commit inicial y la carga del documento final se hicieron directamente sobre ella.
 - `carga-de-documentos-y-diagrama`: se utilizó para la carga de documentos y corrección del archivo README.
 - `actualizacion-documento-final`: rama secundaria utilizada para actualizar los links, la estructura del README y subir la versión final del documento.
 
@@ -133,7 +133,7 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 - `main: Actualización de links en README.md para proyecto y repositorio`
 - `carga-de-documentos-y-diagrama: carga de BPMN.png`
 - `carga-de-documentos-y-diagrama: actualizacion de estructura de archivo README`
-- `corrección en README de links y declaración de IA`
+- `actualizacion-documento-final: se borra archivo docx y se deja el archivo en pdf`
 
 ## Pull Request y revisión de pares
 
