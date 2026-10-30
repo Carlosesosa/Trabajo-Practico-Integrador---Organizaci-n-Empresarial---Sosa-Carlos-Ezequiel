@@ -139,8 +139,8 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 
 - **Pull Request:** [#9 – docs: agrega diagrama BPMN, documento consolidado y actualiza README](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/9)
 - **Rama:** `carga-de-documentos-y-diagrama` → `main`
-- **Revisado por:**  @Eliasgsosa
-- **Issue vinculado:** #8 (`Closes #8`)
+- **Revisado por:**  [@Eliasgsosa](https://github.com/Eliasgsosa)
+- **Issue vinculado:** [#8](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/issues/8)(`Closes #8`)
 - **Qué se revisó:** coincidencia del diagrama BPMN con el flujo y las compuertas descritas, links y estructura del README.
 - **Resultado:** aprobado y mergeado.
 
