@@ -6,7 +6,7 @@ Módulo centralizado de gestión logística y redistribución de stock para HABi
 | | |
 |---|---|
 | **Tablero ágil** | [GitHub Projects/Tablero Ágil](https://github.com/users/Carlosesosa/projects/1/views/1) |
-| **Repositorio** | [Repositorio - Trabajo Practico Integrador Organización Empresarial/Sosa Carlos Ezequiel](https://github.com/Carlosesosa/Trabajo-Practico-Integrador---Organizaci-n-Empresarial---Sosa-Carlos-Ezequiel.git) |
+| **Repositorio** | [Repositorio - Trabajo Practico Integrador Organización Empresarial/Sosa Carlos Ezequiel](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel) |
 | **Docente titular** | Prof. Gabriela Martínez |
 | **Docentes adjuntos** | Prof. Carolina Bruno, Prof. Mario Raúl López, Prof. Andrea Ramos |
 | **Fecha de entrega** | 1 de noviembre de 2026 |
@@ -45,7 +45,7 @@ El proyecto propone un **módulo centralizado de gestión logística y redistrib
 
 Diagrama del proceso de redistribución de mercadería entre sucursales, con Pools y Lanes:
 
-![Diagrama BPMN](https://github.com/Carlosesosa/Trabajo-Practico-Integrador---Organizaci-n-Empresarial---Sosa-Carlos-Ezequiel/blob/6b9691f9da92669a7856f18ccf9f7252588677a0/diagrama%20BPMN.png)
+![Diagrama BPMN](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/blob/main/diagrama%20BPMN.png)
 
 **Flujo estándar:** el sistema analiza ventas y stock → detecta un producto que supera el plazo sin ventas → genera la alerta → busca una sucursal candidata → recomienda el traslado → Logística revisa y autoriza → se registra el envío y la mercadería queda en tránsito → la sucursal destino confirma la recepción → se actualiza el stock de ambas sucursales.
 
@@ -101,7 +101,7 @@ Las historias se gestionan en el tablero: [GitHub Projects/Tablero Ágil](https:
 | HU-01 – Alertas de baja rotación | #5 | Por Hacer |
 | HU-02 – Revisión y autorización de traslados | #6 | En Progreso |
 | HU-03 – Confirmación de recepción | #7 | Listo |
-| Documentación y diagrama BPMN | #8 | En Progreso |
+| Documentación y diagrama BPMN | #8 | Listo |
 
 > El estado de cada tarjeta se usa para evidenciar el seguimiento del tablero y refleja el avance de la documentación del proyecto, no del código.
 
@@ -123,8 +123,9 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 ## Flujo de trabajo con Git
 
 **Ramas**
-- `main`: versión estable y entregable. No se trabaja directamente sobre ella.
-- Rama secundaria: `carga-de-documentos-y-diagrama` se utilizó para la carga de documentos y corrección del archivo README.
+- `main`: versión estable y entregable. Los cambios principales se incorporan mediante ramas secundarias y Pull Requests; el commit inicial y la carga del documento final se hicieron directamente sobre ella.
+- `carga-de-documentos-y-diagrama`: se utilizó para la carga de documentos y corrección del archivo README.
+- `actualizacion-documento-final`: rama secundaria utilizada para actualizar los links, la estructura del README y subir la versión final del documento.
 
 **Mensajes de commit**
 - `main: initial commit` 
@@ -132,14 +133,23 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 - `main: Actualización de links en README.md para proyecto y repositorio`
 - `carga-de-documentos-y-diagrama: carga de BPMN.png`
 - `carga-de-documentos-y-diagrama: actualizacion de estructura de archivo README`
-- `corrección en README de links y declaración de IA`
+- `actualizacion-documento-final: se borra archivo docx y se deja el archivo en pdf`
+
+## Pull Request y revisión de pares
+
+- **Pull Request:** [#9 – docs: agrega diagrama BPMN, documento consolidado y actualiza README](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/9)
+- **Rama:** `carga-de-documentos-y-diagrama` → `main`
+- **Revisado por:**  [@Eliasgsosa](https://github.com/Eliasgsosa)
+- **Issue vinculado:** [#8](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/issues/8)  (`Closes #8`)
+- **Qué se revisó:** coincidencia del diagrama BPMN con el flujo y las compuertas descritas, links y estructura del README.
+- **Resultado:** aprobado y mergeado.
 
 ## Estructura del repositorio
 
 ```
 .
 ├── README.md
-├── TP Integrador Organización Empresarial Entrega n4 - Sosa Carlos Ezequiel.docx     Documento consolidado
+├── TP Integrador Organización Empresarial Entrega n4 - Sosa Carlos Ezequiel.pdf     Documento consolidado
 └── diagrama BPMN.png    Diagrama del proceso
 ```
 
@@ -178,7 +188,7 @@ Revisé y verifiqué el contenido final de este repositorio y asumo la responsab
 
 ## Bibliografía
 
-- HABiTAR. (s.f.). *Quiénes somos*. https://habitar.com.ar/quienes-somos
-- HABiTAR. (s.f.). *Sucursales*. https://habitar.com.ar/sucursales
-- HABiTAR. (s.f.). *Cómo comprar online*. https://habitar.com.ar/como-comprar
+- HABiTAR. (s.f.). [*Quiénes somos*](https://habitar.com.ar/quienes-somos)
+- HABiTAR. (s.f.). [*Sucursales*](https://habitar.com.ar/sucursales)
+- HABiTAR. (s.f.). [*Cómo comprar online*](https://habitar.com.ar/como-comprar)
 - Sosa, C. E. (2026). *Trabajo Práctico Integrador, Entregas N°1, N°2 y N°3*. Organización Empresarial, Tecnicatura Universitaria en Programación, UTN.
