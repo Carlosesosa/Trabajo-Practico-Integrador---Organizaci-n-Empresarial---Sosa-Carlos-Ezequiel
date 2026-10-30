@@ -45,7 +45,7 @@ El proyecto propone un **módulo centralizado de gestión logística y redistrib
 
 Diagrama del proceso de redistribución de mercadería entre sucursales, con Pools y Lanes:
 
-![Diagrama BPMN](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/blob/actualizacion-documento-final/diagrama%20BPMN.png)
+![Diagrama BPMN](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/blob/main/diagrama%20BPMN.png)
 
 **Flujo estándar:** el sistema analiza ventas y stock → detecta un producto que supera el plazo sin ventas → genera la alerta → busca una sucursal candidata → recomienda el traslado → Logística revisa y autoriza → se registra el envío y la mercadería queda en tránsito → la sucursal destino confirma la recepción → se actualiza el stock de ambas sucursales.
 
@@ -124,7 +124,8 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 
 **Ramas**
 - `main`: versión estable y entregable. No se trabaja directamente sobre ella.
-- Rama secundaria: `carga-de-documentos-y-diagrama` se utilizó para la carga de documentos y corrección del archivo README.
+- `carga-de-documentos-y-diagrama`: se utilizó para la carga de documentos y corrección del archivo README.
+- `actualizacion-documento-final`: rama secundaria utilizada para actualizar los links, la estructura del README y subir la versión final del documento.
 
 **Mensajes de commit**
 - `main: initial commit` 
