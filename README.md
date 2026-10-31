@@ -133,7 +133,7 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 ## Flujo de trabajo con Git
 
 **Ramas**
-- `main`: versión estable y entregable. El commit inicial se hizo directamente sobre ella; el resto de los cambios se incorpora mediante ramas secundarias y Pull Requests.
+- `main`: versión estable y entregable. Los cambios principales se incorporan mediante ramas secundarias; el commit inicial se hizo directamente sobre ella; el resto de los cambios se incorporó mediante Pull Requests.
 - `carga-de-documentos-y-diagrama`: se utilizó para la carga de documentos y corrección del archivo README.
 - `actualizacion-documento-final`: rama secundaria utilizada para actualizar los links, la estructura del README y subir la versión final del documento.
 
@@ -154,7 +154,7 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 | PR | Rama | Qué incorpora |
 |---|---|---|
 | [#9](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/9) | carga-de-documentos-y-diagrama → main | Diagrama BPMN, documento consolidado de la Entrega N°4 y actualización del README. |
-| [#10](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/10) | actualizacion-documento-final → main | (tu texto actual) |
+| [#10](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/10) | actualizacion-documento-final → main | Links del README al nuevo nombre del repositorio, imagen del BPMN apuntando a main, sección de Pull Request, Issue #8 en Listo, ramas, commits y estructura actualizados, y reemplazo del .docx por el PDF. |
 | [#11](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/11) | main → actualizacion-documento-final | Sincronización de la rama con main para continuar las ediciones pendientes. |
 | [#12](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/12) | actualizacion-documento-final → main | Versión final: PDF consolidado, diagrama BPMN actualizado, indicadores, declaración de IA y README definitivo. |
 
