@@ -1,6 +1,5 @@
 # Trabajo Practico Integrador Organización Empresarial - Sosa Carlos Ezequiel
 Módulo centralizado de gestión logística y redistribución de stock para HABiTAR (DILCAR S.A.). TPI de Organización Empresarial, UTN - TUP a Distancia.
-# Módulo Centralizado de Gestión Logística y Redistribución de Stock – Habitar / DILCAR S.A.
 
 
 | | |
@@ -45,9 +44,20 @@ El proyecto propone un **módulo centralizado de gestión logística y redistrib
 
 Diagrama del proceso de redistribución de mercadería entre sucursales, con Pools y Lanes:
 
-![Diagrama BPMN](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/blob/main/diagrama%20BPMN.png)
+![Diagrama BPMN](diagrama%20BPMN.png)
 
-**Flujo estándar:** el sistema analiza ventas y stock → detecta un producto que supera el plazo sin ventas → genera la alerta → busca una sucursal candidata → recomienda el traslado → Logística revisa y autoriza → se registra el envío y la mercadería queda en tránsito → la sucursal destino confirma la recepción → se actualiza el stock de ambas sucursales.
+| Pool / Lane | Rol en el proceso |
+|---|---|
+| **Pool HABITAR (DILCAR S.A.)** | Organización donde se implementa el módulo. Contiene cinco lanes. |
+| Lane Sistema (automatizado) | Consulta stock y ventas, genera alertas, busca sucursal candidata, recomienda traslados y actualiza existencias (tareas de servicio). |
+| Lane Logística | Revisa la alerta y la recomendación, autoriza o rechaza el traslado y coordina el envío. |
+| Lane Sucursal origen | Prepara y despacha la mercadería autorizada. |
+| Lane Distribución y Transporte | Flota propia de Habitar: retira la mercadería en origen y la entrega en la sucursal destino. |
+| Lane Sucursal destino | Recibe y controla la mercadería, y registra la recepción o la incidencia. |
+| **Pool Sistemas de venta e inventario existentes (externo)** | Provee datos de stock y ventas mediante API. |
+
+
+**Flujo estándar:** el sistema analiza ventas y stock → detecta un producto que supera el plazo sin ventas → genera la alerta → busca una sucursal candidata → recomienda el traslado → Logística revisa y autoriza → la sucursal de origen prepara y despacha y el sistema deja la mercadería en tránsito → Distribución y Transporte retira en origen y entrega en destino → la sucursal destino recibe y controla → se actualiza el stock de ambas sucursales.
 
 **Compuertas de decisión (excepciones):**
 
@@ -114,16 +124,16 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 | Tiempo de respuesta de consultas de stock | % de consultas por API resueltas en menos de 2 s | ≥ 95 % | Por prueba de carga y mensual | Logs de la API |
 | Redistribución de mercadería inmovilizada | Productos con más de 30 días sin ventas redistribuidos ÷ total de productos en esa condición | ≥ 35 % en los primeros 6 meses | Mensual | Tablas ALERTA y MOVIMIENTO_MERCADERIA |
 | Capacidad de procesamiento | Registros diarios de transacciones sincronizados sin error | Hasta 100.000 por día | Diaria | Logs de sincronización |
-| Cumplimiento del plazo de desarrollo | Semanas reales ÷ semanas planificadas | 16 semanas hábiles | Semanal | Diagrama de Gantt y tablero |
+| Cumplimiento del plazo de desarrollo | Semanas reales ÷ semanas planificadas | ≤ 1,0 (16 semanas planificadas) | Semanal | Diagrama de Gantt y tablero |
 | Tasa de incidencias en recepción | Traslados *Con incidencia* ÷ traslados recibidos | A definir tras el piloto (referencia inicial: ≤ 5 %) | Mensual | MOVIMIENTO_MERCADERIA |
-| Tiempo de gestión de alertas | Tiempo promedio entre generación de la alerta y su resolución | A definir tras el piloto | Semanal | ALERTA |
+| Tiempo de gestión de alertas | Tiempo promedio entre generación de la alerta y su resolución | ≤ 3 días hábiles (referencia inicial; a ajustar tras el piloto) | Semanal | ALERTA |
 | Trazabilidad de autorizaciones | Traslados autorizados con `id_usuario_autoriza` registrado | 100 % | Mensual | MOVIMIENTO_MERCADERIA |
 | Integridad de stock | Registros con `cantidad_disponible` negativa o duplicados de producto + sucursal | 0 | Diaria | Tabla STOCK |
 
 ## Flujo de trabajo con Git
 
 **Ramas**
-- `main`: versión estable y entregable. Los cambios principales se incorporan mediante ramas secundarias y Pull Requests; el commit inicial y la carga del documento final se hicieron directamente sobre ella.
+- `main`: versión estable y entregable. Los cambios principales se incorporan mediante ramas secundarias; el commit inicial se hizo directamente sobre ella; el resto de los cambios se incorporó mediante Pull Requests.
 - `carga-de-documentos-y-diagrama`: se utilizó para la carga de documentos y corrección del archivo README.
 - `actualizacion-documento-final`: rama secundaria utilizada para actualizar los links, la estructura del README y subir la versión final del documento.
 
@@ -134,12 +144,21 @@ Indicadores para la auditoría técnica del sistema. Los primeros cuatro derivan
 - `carga-de-documentos-y-diagrama: carga de BPMN.png`
 - `carga-de-documentos-y-diagrama: actualizacion de estructura de archivo README`
 - `actualizacion-documento-final: se borra archivo docx y se deja el archivo en pdf`
+- `actualizacion-documento-final: se borra diagrama BPMN.png`
+- `actualizacion-documento-final: se borra pdf consolidado`
+- `actualizacion-documento-final: Actualización de README para el diagrama BPMN and procesar detalles`
+- `actualizacion-documento-final: Carga de nuevo diagrama BPMN actualizado`
 
 ## Pull Request y revisión de pares
 
-- **Pull Request:** [#9 – docs: agrega diagrama BPMN, documento consolidado y actualiza README](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/9)
-- **Rama:** `carga-de-documentos-y-diagrama` → `main`
-- **Revisado por:**  [@Eliasgsosa](https://github.com/Eliasgsosa)
+| PR | Rama | Qué incorpora |
+|---|---|---|
+| [#9](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/9) | carga-de-documentos-y-diagrama → main | Diagrama BPMN, documento consolidado de la Entrega N°4 y actualización del README. |
+| [#10](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/10) | actualizacion-documento-final → main | Links del README al nuevo nombre del repositorio, imagen del BPMN apuntando a main, sección de Pull Request, Issue #8 en Listo, ramas, commits y estructura actualizados, y reemplazo del .docx por el PDF. |
+| [#11](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/11) | main → actualizacion-documento-final | Sincronización de la rama con main para continuar las ediciones pendientes. |
+| [#12](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/pull/12) | actualizacion-documento-final → main | Versión final: PDF consolidado, diagrama BPMN actualizado, indicadores, declaración de IA y README definitivo. |
+
+- **Revisado por (PR #9):** [@Eliasgsosa](https://github.com/Eliasgsosa)
 - **Issue vinculado:** [#8](https://github.com/Carlosesosa/Trabajo-Practico-Integrador-Organizacion-Empresarial-Sosa-Carlos-Ezequiel/issues/8)  (`Closes #8`)
 - **Qué se revisó:** coincidencia del diagrama BPMN con el flujo y las compuertas descritas, links y estructura del README.
 - **Resultado:** aprobado y mergeado.
@@ -164,7 +183,7 @@ El caso de estudio, la problemática logística, la propuesta de mejora y el org
 |---|---|---|
 | N°1 y N°2 | ChatGPT | Organizar ideas, mejorar la redacción, estructurar las respuestas y el diagrama de Gantt. |
 | N°3 | Claude (Anthropic) | Organizar y dar formato al documento, revisar la redacción y trabajar sobre el diccionario de datos. |
-| N°4 | Claude (Anthropic) | Organizar la redacción del archivo README.md y la consolidación del documento. |
+| N°4 | Claude (Anthropic) | Organizar la redacción del README.md, la consolidación del documento y ayuda al generar y corregir el Diagrama BPMN. |
 
 ### Prompts utilizados y su justificación
 
@@ -181,6 +200,7 @@ El caso de estudio, la problemática logística, la propuesta de mejora y el org
 - Hice configurable el plazo de 30 días por categoría de producto.
 - La problemática logística surge de mi experiencia laboral en Habitar, la IA no la identificó.
 - La referencia comparativa con Cetrogar proviene de información que obtuve a través de un familiar, no de la IA.
+- El primer borrador del BPMN modelaba el transporte como un actor externo. Lo corregí porque Habitar tiene flota propia de distribución, por eso hoy es una lane interna “Distribución y Transporte”, coherente con el organigrama. También corregí que la recepción debía iniciar recién cuando se entrega la mercadería.
 
 ### Responsabilidad
 
